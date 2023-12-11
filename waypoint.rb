@@ -14,7 +14,7 @@ class Waypoint
       def get_json(indent=0)
     
         # combined the j= and j+= to help with redability and changed j to temp string to get rid of single letter variables  
-        temp_string = '{"type": "Feature","geometry": {"type": "Point","coordinates": '
+        temp_string = '{"type":"Feature","geometry": {"type": "Point","coordinates": '
         # if name is not nil or type is not nil
         # kept this here so it is easy it edit later
         temp_string += "[#{@lon},#{@lat}"
@@ -23,7 +23,7 @@ class Waypoint
         end
         temp_string += ']},'
         if name != nil or type != nil
-          temp_string += '"properties": {'
+          temp_string += '"properties":{'
           if name != nil
             temp_string += '"title": "' + @name + '"'
           end

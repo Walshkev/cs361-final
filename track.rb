@@ -15,14 +15,14 @@ class Track
     def get_json()
       #combined all of the j+= into one line and changed j to tempstring to get rid of single letter variables 
     
-      temp_string = '{ "type": "Feature", '
+      temp_string = '{"type":"Feature", '
       if @name != nil
         #combined all of the j+= into one line 
-        temp_string+= '"properties": {"title": " ' + @name + '" },'
+        temp_string+= '"properties": { "title":"' + @name + '" },'
        
       end
       #combined all of the j+= into one line 
-      temp_string += '"geometry": { "type": "MultiLineString",''"coordinates": ['
+      temp_string += '"geometry": {"type": "MultiLineString",''"coordinates": ['
    
   
       # Loop through all the segment objects
