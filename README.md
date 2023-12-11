@@ -60,7 +60,7 @@ it should work even if the order of elements in the JSON is changed.
 
 ## What to Do
 
-1. Fork this repo. Clone your fork to your computer.as
+1. Fork this repo. Clone your fork to your computer.
 
 2. Refactor the code so that it follows the principles introduced this
    quarter. Anything in the code can be changed, but the output should
