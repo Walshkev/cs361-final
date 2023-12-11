@@ -5,11 +5,6 @@ require_relative 'world.rb'
 require_relative 'tracksegment.rb'
 require_relative 'point.rb'
 
-
-
-
-
-
 def main()
   w = Waypoint.new(-121.5, 45.5, 30, "home", "flag")
   w2 = Waypoint.new(-121.5, 45.6, nil, "store", "dot")
@@ -37,4 +32,13 @@ end
 if File.identical?(__FILE__, $0)
   main()
 end
+
+
+
+
+# in all i changed the names of veriables form single letters to discriptive words to help with redability 
+#changed the names of simmilar methods to the same name to opporate the same without a if statement in gis 
+# broke up the gis file to differnt class files and requied them in the gis file to help encapulation and redability. 
+# made multiy line setting of variables to one line to help with redability. 
+#
 

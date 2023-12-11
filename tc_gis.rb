@@ -19,6 +19,8 @@ class TestGis < Test::Unit::TestCase
     expected = JSON.parse('{"type": "Feature","properties": {"title": "store"},"geometry": {"type": "Point","coordinates": [-121.5,45.5]}}')
     result = JSON.parse(w.get_waypoint_json)
     assert_equal(result, expected)
+
+    
   end
 
   def test_tracks

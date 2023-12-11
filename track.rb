@@ -14,13 +14,12 @@ class Track
     # changed from get_track_json  to get json to work as an interface 
     def get_json()
       #combined all of the j+= into one line and changed j to tempstring to get rid of single letter variables 
-      # j = '{'
+    
       temp_string = '{ "type": "Feature", '
       if @name != nil
         #combined all of the j+= into one line 
         temp_string+= '"properties": {"title": " ' + @name + '" },'
-        # j += '"title": "' + @name + '" '},'
-        # j += '},'
+       
       end
       #combined all of the j+= into one line 
       temp_string += '"geometry": { "type": "MultiLineString",''"coordinates": ['
